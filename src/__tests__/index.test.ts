@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-const add = (a, b) => {
+const add = (a: number, b: number) => {
   return a + b;
 };
 
