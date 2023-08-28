@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="p-10">
-      <h1 className="text-center text-xl font-extrabold">Peach</h1>
+      <h1 className="text-center text-xl font-extrabold">Peach 1</h1>
       <div className="flex flex-col items-center gap-2  p-2 sm:flex-row sm:items-baseline sm:justify-between">
         <Card className="w-[20rem]">
           <CardHeader>
