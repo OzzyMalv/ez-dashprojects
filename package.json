@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "types": "tsc",
     "test": "vitest run"
+  },
+  "packageManager": "pnpm@8.6.11",
+  "engines": {
+    "node": ">=v18.16.0",
+    "pnpm": ">=8.6.0"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
