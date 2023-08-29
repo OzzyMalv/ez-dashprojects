@@ -10,6 +10,7 @@
     "types": "tsc",
     "test": "vitest run"
   },
+  "packageManager": "pnpm@8.6.11",
   "engines": {
     "node": ">=v18.16.0",
     "pnpm": ">=8.6.0"
