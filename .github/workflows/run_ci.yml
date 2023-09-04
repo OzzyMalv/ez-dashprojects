@@ -12,8 +12,9 @@ jobs:
     steps:
       - name: Run info
         run: |
-          echo trigger ${{ github.event_name }}
-          echo started by ${{ github.triggering_actor }} running for ${{ github.ref_name }}
+          echo trigger [ ${{ github.event_name }} ]
+          echo started by ${{ github.triggering_actor }} running for [ ${{ github.ref_name }} ]
+          echo full ref: ${{ github.ref }}
 
       - name: Checkout
         uses: actions/checkout@v3
