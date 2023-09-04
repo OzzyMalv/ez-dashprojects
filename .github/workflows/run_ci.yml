@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Run info
+        run: |
+          echo trigger ${{ github.event_name }}
+          echo started by ${{ github.triggering_actor }} running for ${{ github.ref_name }}
+
       - name: Checkout
         uses: actions/checkout@v3
 
