@@ -14,7 +14,8 @@ jobs:
         run: |
           echo trigger [ ${{ github.event_name }} ]
           echo started by ${{ github.triggering_actor }} running for [ ${{ github.ref_name }} ]
-          echo full ref: ${{ github.ref }}
+          echo commit: ${{ github.event.head_commit.message }}
+          echo commit_id: ${{ github.event.head_commit.id }}
 
       - name: Checkout
         uses: actions/checkout@v3
