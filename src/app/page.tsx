@@ -23,18 +23,25 @@ export default function Home() {
           </CardHeader>
           <CardContent className="flex flex-col gap-2">
             <Input placeholder="Link" />
-            <Button asChild>
-              <Link href="https://go.peach.me/" target="_blank">
-                PROD Peach GO
-              </Link>
-            </Button>
           </CardContent>
           <CardFooter className="flex justify-end">
             <Button>Add</Button>
           </CardFooter>
         </Card>
+        <h3 className="text-center">or just import your #Project Board</h3>
+        <Card className="w-[20rem]">
+          <CardHeader>
+            <CardTitle></CardTitle>
+            <CardDescription></CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-2">
+            <Input placeholder="Code" />
+          </CardContent>
+          <CardFooter className="flex justify-end">
+            <Button>Import</Button>
+          </CardFooter>
+        </Card>
       </div>
-      <h3 className="text-center">or import your Project Board</h3>
     </main>
   );
 }
