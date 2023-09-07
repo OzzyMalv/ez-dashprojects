@@ -16,6 +16,8 @@ jobs:
           echo started by "${{ github.triggering_actor }}" running for [ ${{ github.ref_name }} ]
           echo commit: "${{ github.event.head_commit.message }}"
           echo commit_id: "${{ github.event.head_commit.id }}"
+          echo PR: "${{ github.event.pull_request.title }}"
+          echo commit_id from PR: "${{ github.event.pull_request.head.sha }}"
 
       - name: Checkout
         uses: actions/checkout@v4
