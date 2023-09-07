@@ -18,9 +18,9 @@ jobs:
           echo commit_id: "${{ github.event.head_commit.id }}"
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Use PNPM
         uses: pnpm/action-setup@v2.4.0
