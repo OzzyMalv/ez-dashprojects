@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,8 +10,19 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+
+import { importSchema, ImportSchemaType } from "../(importForm)/formSchema";
 
 export default function ProjectBoard() {
+  const form = useForm<ImportSchemaType>({
+    resolver: zodResolver(importSchema),
+    defaultValues: {
+      importLink: "",
+    },
+  });
+  console.log(123, form);
   return (
     <main className="p-10">
       <h1 className="text-center text-xl font-extrabold">Peach 1</h1>

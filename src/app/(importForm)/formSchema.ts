@@ -2,7 +2,8 @@
 
 import * as z from "zod";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const formSchema = z.object({
+export const importSchema = z.object({
   importLink: z.string().max(500, "max 500"),
 });
+
+export type ImportSchemaType = z.input<typeof importSchema>;
